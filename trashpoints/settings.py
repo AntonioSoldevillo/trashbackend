@@ -9,7 +9,8 @@ SECRET_KEY = 'django-insecure-wx7tto81_9p&g)&b@ld+7%$=^i1$#g0tkzstagbmd^r(7gpdmg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://trashbackend.onrender.com/api/api/classification-results/']
+ALLOWED_HOSTS = ['trashbackend.onrender.com']
+
 
 # Application definition
 INSTALLED_APPS = [
