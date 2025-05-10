@@ -1,8 +1,10 @@
-# urls.py
-from django.urls import path
-from . import views
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from .views import ClassificationResultViewSet
+
+router = DefaultRouter()
+router.register(r'classification-results', ClassificationResultViewSet, basename='classificationresult')
 
 urlpatterns = [
-    path('api/items/', views.create_item, name='create_item'),
-    path('api/classification-results/', views.create_classification_result, name='create_classification_result'),
+    path('api/', include(router.urls)),
 ]
