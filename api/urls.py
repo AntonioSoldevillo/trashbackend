@@ -6,5 +6,5 @@ router = DefaultRouter()
 router.register(r'classification-results', ClassificationResultViewSet, basename='classificationresult')
 
 urlpatterns = [
-    path('api/', include(router.urls)),
+    path('', include(router.urls)),  # Register router URLs without the 'api/' prefix here.
 ]
