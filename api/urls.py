@@ -1,10 +1,6 @@
-from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from .views import ClassificationResultViewSet
-
-router = DefaultRouter()
-router.register(r'classification-results', ClassificationResultViewSet, basename='classificationresult')
+from django.urls import path
+from . import views
 
 urlpatterns = [
-    path('', include(router.urls)),  # Register router URLs without the 'api/' prefix here.
+    path('api/classification-results/', views.classification_results, name='classification_results'),
 ]

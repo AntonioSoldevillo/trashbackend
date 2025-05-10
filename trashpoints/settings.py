@@ -93,11 +93,7 @@ CORS_ALLOW_METHODS = [
     'OPTIONS',
 ]
 
-CORS_ALLOW_HEADERS = [
-    'content-type',
-    'authorization',
-    'x-csrftoken',
-]
+
 
 # Allow all origins (use cautiously in production)
 CORS_ALLOW_ALL_ORIGINS = True
